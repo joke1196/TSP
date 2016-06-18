@@ -28,6 +28,8 @@ the travel distance is:
 
 	3354.52313748 km
 
+	We believe this is the best solution there are 14! possible solutions. Of course the goal of our genetic algorithm is not to test all these possibilities but to keep only the best one. So what makes us think it's the best solution ? It's because with more generations and with a bigger population still we obtain 3354.52 as the best result. What we know tough is that a genetic algorithm doesn't give us the perfect solution it only gives us a good solution.  So it's only by testing that we think it's the best solution of course we could be wrong and our solution is just a local minima and not the global we are searching for.
+
 ###6.3 - Fitness function
 For the fitness function, we decide calculate the total distance between points. This value is our fitness value. If all GPS points are on the chromosome (the travel goes through each city) we calculate the total distance. And return a big value (in our code 15000) and subtract the total distance. This method return a big number if the total distance is smaller. This number 15000 was found after several tests, the fitness could not be bigger than this number. So we used it to return a better fitness score for a smaller distance.
 
